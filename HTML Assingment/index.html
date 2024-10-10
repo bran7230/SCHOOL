@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Order delicious pizzas from Brandon's Pizzeria!"/>
+  <meta name="robots" content="noindex, nofollow"/>
+  <title>Order Your Pizza - Brandon's Pizzeria</title>
+
+  <!-- Poppins font for a clean look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <!-- Custom styles in style.css -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <!-- Brandon's handpicked pizza logo -->
+      <img src="pizza.jpg" alt="Pizza Shop Logo"/>
+    </div>
+    <p>Welcome to Brandon's Pizzeria, the best pizza in town!</p>
+  </header>
+
+  <main>
+    <h1>Order Your Favorite Pizza</h1>
+
+    <form id="pizzaOrderForm" method="post">
+      <!-- How many pizzas do you want? -->
+      <div class="form-group">
+        <label for="numPizzas">Number of Pizzas:</label>
+        <input id="numPizzas" type="number" name="numPizzas" min="1" value="1" required/>
+      </div>
+
+      <!-- Choose your size (we've got options!) -->
+      <div class="form-group">
+        <h2>Pizza Size:</h2>
+        <label>
+          <input type="radio" name="pizzaSize" value="Small" required/> Small
+        </label>
+        <label>
+          <input type="radio" name="pizzaSize" value="Medium"/> Medium
+        </label>
+        <label>
+          <input type="radio" name="pizzaSize" value="Large"/> Large
+        </label>
+      </div>
+
+      <!-- Toppings: pick your favorites (up to 4 recommended) -->
+      <div class="form-group">
+        <h2>Select Toppings:</h2>
+        <label>
+          <input type="checkbox" name="toppings" value="Pepperoni"/> Pepperoni
+        </label>
+        <label>
+          <input type="checkbox" name="toppings" value="Mushrooms"/> Mushrooms
+        </label>
+        <label>
+          <input type="checkbox" name="toppings" value="Onions"/> Onions
+        </label>
+        <label>
+          <input type="checkbox" name="toppings" value="Olives"/> Olives
+        </label>
+      </div>
+
+      <!-- Enter your email for the order receipt -->
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your email for the order receipt" required/>
+      </div>
+
+      <!-- Place your order button -->
+      <button type="submit">Place Order</button>
+    </form>
+
+    <!-- This section will show the order summary once submitted -->
+    <section>
+      <div class="order">
+        <h2>Your Order Summary:</h2>
+        <!-- Details will appear here after submission -->
+      </div>
+    </section>
+
+    <!-- Leave a review if you'd like! -->
+    <section>
+      <div class="review">
+        <h3>How did we do?</h3>
+        <input type="text" placeholder="Write your review here"/>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
