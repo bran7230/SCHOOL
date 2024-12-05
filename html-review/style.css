@@ -1,0 +1,63 @@
+.top{
+    background-color: black;
+}
+.logo img{
+    display: grid;
+    align-items: left;
+    justify-content: left;
+    height: 15vh;
+    width: auto;
+}
+
+.backtop{
+    display: grid;
+    background-image: url(1.jpg);
+    height: 100%;
+    width: 100%;
+    padding: 20vh 20vh;
+
+}
+
+
+   
+
+.test{
+
+    text-align: right;
+    align-items: right;
+    color: white;
+    text-decoration: none;
+    color: white;
+}
+
+.title{
+    display: grid;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+.main1 > h1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10vh;
+}
+
+.texttest{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text1{
+    align-items: right;
+    text-align: right;
+    justify-content: right;
+}
+
+section > div > img{
+    height: 30vh;
+    width: auto;
+}
